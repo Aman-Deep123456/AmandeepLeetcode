@@ -22,6 +22,7 @@ public:
     if(!root) return {};
     vector<int> inorder;
     while(curr){
+        
         if(curr->left == nullptr){
          inorder.push_back(curr->data);
          curr = curr->right;
