@@ -7,12 +7,9 @@ public:
         for (int num : nums) {
             total += num;
         }
-
         int target = total - x;
-
         if (target == 0)
             return n;
-
         int left = 0;
         int sum = 0;
         int maxLen = -1;
