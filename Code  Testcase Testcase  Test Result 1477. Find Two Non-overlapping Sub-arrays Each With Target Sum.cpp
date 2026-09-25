@@ -10,9 +10,8 @@ public:
     int minSumOfLengths(vector<int>& arr, int target) {
         int n = arr.size();
         const int INF = 1e9;
-
         vector<int> best(n, INF);
-        unordered_map<int, int> mp;
+      unordered_map<int, int> mp;
 
         mp[0] = -1;
 
