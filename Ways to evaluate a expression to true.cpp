@@ -63,7 +63,7 @@ private:
                 }
             }
 
-            else { // XOR
+            else {
 
                 if (isTrue) {
                     ways = (ways
