@@ -1,7 +1,7 @@
 class solution {
 public:
     TreeNode* ceil(TreeNode* root){
-        TreeNode* ceil = nullptr;
+        TreeNode* ceil = NULL;
         while(root){
             if(root->data == val){
                 ceil = root;
