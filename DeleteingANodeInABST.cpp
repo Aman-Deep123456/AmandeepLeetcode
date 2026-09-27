@@ -37,6 +37,7 @@ class Solution {
                }
             return findRight(node->right);
           }
+    
 public:
     TreeNode* deleteNode(TreeNode* root, int key) {
         if(root == NULL) return NULL;

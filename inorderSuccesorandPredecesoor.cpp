@@ -44,6 +44,7 @@ class Solution{
           }
           return pred;
        }
+    
     public:
         vector<int> succPredBST(TreeNode* root,int key){
             //your code goes here
