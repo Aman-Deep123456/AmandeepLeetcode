@@ -27,16 +27,19 @@ public:
          inorder.push_back(curr->data);
          curr = curr->right;
         }
+        
         else{
             TreeNode* prev = curr->left;
             while(prev->right && prev->right!=curr){
                 prev = prev->right;
             }
-            // if no right connect the parent 
+            
+            // if no right connect the parent
             if(prev->right == nullptr){
                 prev->right = curr;
                 curr=curr->left;
             }
+            
             else{
                 prev->right = nullptr;
                 inorder.push_back(curr->data);
