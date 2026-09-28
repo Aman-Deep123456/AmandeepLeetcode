@@ -19,6 +19,7 @@
 class Solution {
 public:
     TreeNode* insertIntoBST(TreeNode* root, int val) {
+        
         if(!root) return new TreeNode(val);
         TreeNode* curr = root;
         while(true){
@@ -29,6 +30,7 @@ public:
                 break;
                }
             }
+            
             else{
                 if(curr->left != NULL) curr = curr->left;
                 else{
