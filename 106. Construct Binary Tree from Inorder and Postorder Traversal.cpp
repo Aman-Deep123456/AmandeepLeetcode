@@ -27,7 +27,9 @@ private :
          root->left = buildTree(postorder, postStart, postStart+numsLeft-1, inorder, inStart, inRoot-1, hashMap);
          root->right = buildTree(postorder, postStart+numsLeft, postEnd-1, inorder, inRoot+1, inEnd, hashMap);
          return root;
+        
     }
+    
 public:
     TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
         if(inorder.size()!=postorder.size()) return NULL;
