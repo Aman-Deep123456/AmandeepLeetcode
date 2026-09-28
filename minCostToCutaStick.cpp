@@ -15,7 +15,9 @@ class Solution {
             mini = min(mini, cost);
          }
          return dp[i][j] =  mini;
+        
     }
+    
 public:
     int minCost(int n, vector<int>& cuts) {
         sort(cuts.begin(), cuts.end());
