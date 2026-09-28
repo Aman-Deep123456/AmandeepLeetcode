@@ -42,6 +42,7 @@ private:
                 right.maxSum
             });
 
+          // inorder in right 
             return nodeVal(
                 max(root->val, right.maxVal),
                 min(root->val, left.minVal),
