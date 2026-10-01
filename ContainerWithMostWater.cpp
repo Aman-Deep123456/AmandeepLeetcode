@@ -11,9 +11,11 @@ public:
         int right=height.size()-1;
         int maxwater=0;
         while(left<right){
+            
             int w = right-left;
             int h=min(height[left],height[right]);
             int area=w*h;
+
             maxwater=max(area,maxwater);
             if(height[left]<height[right])
               left++;
