@@ -21,7 +21,7 @@ class Solution {
     TreeNode* prev;
     TreeNode* middle;
     TreeNode* last;
-    
+
     void recover(TreeNode* root){
           if(!root) return;
           recover(root->left);
@@ -37,6 +37,7 @@ class Solution {
         prev = root ;
         recover(root->right);
     }
+    
 public:
     void recoverTree(TreeNode* root) {
      first = middle = last = NULL;
