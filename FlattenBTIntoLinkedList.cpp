@@ -47,9 +47,11 @@ public:
     void flatten(TreeNode* root) {
        stack<TreeNode*> st ;
        st.push(root);
+
        while(!st.empty()){
         TreeNode* node = st.top();
         st.pop();
+
         if(root->right) st.push(root->right);
         if(root->left)  st.push(root->left);
         if(!st.empty()){
@@ -75,12 +77,15 @@ class Solution {
 public:
     void flatten(TreeNode* root) {
        TreeNode* curr = root;
+       
        while(curr!=NULL){
         if(curr->left!=NULL){
         TreeNode* prev = curr->left ;
+
         while(prev->right!=NULL){
             prev = prev->right;
         }
+
         prev->right=curr->right;
         curr->right=curr->left;
         curr->left=NULL;
