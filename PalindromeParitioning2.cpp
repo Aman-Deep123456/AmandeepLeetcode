@@ -1,5 +1,5 @@
 class Solution {
-     bool isPalindrome(int i, int j, string s){
+     bool isPalindrome(int i, int j, string &s){
         while(i<j){
             if(s[i]!=s[j]) return false ;
             i++;
@@ -22,7 +22,18 @@ class Solution {
 public:
     int minCut(string s) {
         int n = s.size();
-        vector<int>dp(n, -1);
-        return func(0, n, s, dp) -1;
+        vector<int>dp(n+1, 0);
+        dp[n]= 0 ;
+        for(int i=n-1; i>=0; i--){
+            int minCost = INT_MAX;
+              for(int j=i; j<n; j++){
+                if(isPalindrome(i, j, s)){
+                int cost = 1 + dp[j+1];
+                minCost = min(cost, minCost);
+            }
+        }
+         dp[i] = minCost ; 
+        }
+        return dp[0]-1;
     }
 };
