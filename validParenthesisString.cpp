@@ -22,7 +22,6 @@ public:
             // Reset minOpen to 0 if it drops below 0
             if (minOpen < 0) minOpen = 0;
         }         
-
         // Valid only if we can fully balance the brackets (min required open is 0)
         return minOpen == 0;      
     } 
