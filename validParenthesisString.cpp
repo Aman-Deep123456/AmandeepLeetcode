@@ -15,6 +15,7 @@ public:
                 minOpen--; // Treat as ')'                 
                 maxOpen++; // Treat as '('              
             }              
+            
             // If maxOpen is negative, even treating every '*' as '(' couldn't save it
             if (maxOpen < 0) return false;          
 
