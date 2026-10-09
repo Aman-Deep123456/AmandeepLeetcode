@@ -15,6 +15,7 @@ int reverse(int x){
 
 return rev;
 }
+
 // Brute Force Approach
 /**
 int reverse(int x) {
