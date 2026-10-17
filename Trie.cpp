@@ -6,7 +6,7 @@ struct Node {
     /* Array to store links to child nodes,
     each index represents a letter */
     Node* links[26] = {nullptr};  // Initialize all to nullptr
-
+    
     /* Flag indicating if 
     the node marks the end 
     of a word */
